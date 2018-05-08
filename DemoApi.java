@@ -1,3 +1,4 @@
 public interface DemoApi {
-    public void sayHello();
+    public String sayHello();
+    public void changeName(String name);
 }

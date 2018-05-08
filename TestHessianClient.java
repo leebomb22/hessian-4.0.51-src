@@ -9,7 +9,8 @@ public class TestHessianClient {
         String url = "http://localhost:8080/HessianServer/helloworld";
         HessianProxyFactory pf = new HessianProxyFactory();
         DemoApi da = (DemoApi) pf.create(DemoApi.class, url);
-        da.sayHello();
+        da.changeName("lilei");
+        System.out.println(da.sayHello());
     }
 
 }
